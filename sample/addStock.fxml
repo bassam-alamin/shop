@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.addStockController">
+   <children>
+      <Label layoutX="38.0" layoutY="36.0" prefHeight="30.0" prefWidth="276.0" text="Add Stock!!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="79.0" prefHeight="23.0" prefWidth="89.0" text="Item :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="columnItem" layoutX="193.0" layoutY="78.0" />
+      <Label layoutX="48.0" layoutY="111.0" prefHeight="23.0" prefWidth="107.0" text="Quantity :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="columnQuantity" layoutX="193.0" layoutY="110.0" />
+      <Label layoutX="48.0" layoutY="176.0" prefHeight="23.0" prefWidth="119.0" text="Stock :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="columnStock" layoutX="193.0" layoutY="175.0" />
+      <Button layoutX="138.0" layoutY="211.0" mnemonicParsing="false" onAction="#addDataToDatabase" prefHeight="25.0" prefWidth="137.0" text="Add to Stock" />
+      <Label layoutX="48.0" layoutY="145.0" prefHeight="23.0" prefWidth="107.0" text="Price :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="columnPrice" layoutX="193.0" layoutY="144.0" />
+   </children>
+</AnchorPane>

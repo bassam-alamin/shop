@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.stockController">
+   <children>
+      <Button layoutX="349.0" layoutY="296.0" mnemonicParsing="false" onAction="#changeScreenWhenPushed" prefHeight="32.0" prefWidth="179.0" text="sell items" />
+      <TableView fx:id="tableStock" layoutX="42.0" layoutY="86.0" prefHeight="200.0" prefWidth="518.0">
+         <columns>
+            <TableColumn fx:id="columnItem" prefWidth="145.0" text="Items" />
+            <TableColumn fx:id="columnQuantity" prefWidth="129.0" text="Quantity" />
+            <TableColumn fx:id="columnPrice" prefWidth="128.0" text="Price" />
+            <TableColumn fx:id="columnStock" prefWidth="115.0" text="stock" />
+         </columns>
+      </TableView>
+      <Text layoutX="208.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STOCK AVAILABLE :" wrappingWidth="151.0000079870224">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="88.0" layoutY="296.0" mnemonicParsing="false" onAction="#loadDataFromDatabase" prefHeight="32.0" prefWidth="142.0" text="load stock" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="88.0" layoutY="346.0" mnemonicParsing="false" onAction="#changeScreenWhenPush" prefHeight="32.0" prefWidth="142.0" text="Add Stock" />
+   </children>
+</AnchorPane>

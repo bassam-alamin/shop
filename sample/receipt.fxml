@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Receipt">
+   <children>
+      <TableView fx:id="tableStock" layoutX="102.0" layoutY="74.0" prefHeight="200.0" prefWidth="333.0">
+         <columns>
+            <TableColumn fx:id="columnItem" prefWidth="87.0" text="item" />
+            <TableColumn fx:id="columnQuantity" prefWidth="79.0" text="quantity" />
+            <TableColumn fx:id="columnPrice" prefWidth="77.0" text="price" />
+            <TableColumn fx:id="columnSum" prefWidth="89.0" text="sum" />
+         </columns>
+      </TableView>
+      <Text layoutX="220.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALchinsky Shop" wrappingWidth="96.822265625" />
+      <Label layoutX="132.0" layoutY="284.0" text="Total :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textTotal" layoutX="209.0" layoutY="287.0" prefHeight="25.0" prefWidth="80.0" />
+      <Label layoutX="84.0" layoutY="330.0" text="Amount given :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textAmount" layoutX="208.0" layoutY="328.0" prefHeight="25.0" prefWidth="80.0" />
+      <Label layoutX="109.0" layoutY="356.0" text="Balance :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textBalance" layoutX="208.0" layoutY="358.0" prefHeight="25.0" prefWidth="80.0" />
+   </children>
+</AnchorPane>

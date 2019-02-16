@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sellitemsController">
+   <children>
+      <Label layoutX="412.0" layoutY="113.0" text="Total :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textTotal" layoutX="489.0" layoutY="116.0" prefHeight="25.0" prefWidth="80.0" />
+      <Label layoutX="364.0" layoutY="159.0" text="Amount given :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textAmount" layoutX="488.0" layoutY="157.0" prefHeight="25.0" prefWidth="80.0" />
+      <Label layoutX="389.0" layoutY="185.0" text="Balance :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textBalance" layoutX="488.0" layoutY="187.0" prefHeight="25.0" prefWidth="80.0" />
+      <Button layoutX="437.0" layoutY="361.0" mnemonicParsing="false" text="Print receipt" />
+      <Button layoutX="85.0" layoutY="361.0" mnemonicParsing="false" onAction="#changeScreenWhenPushed" text="Create customer account" />
+      <TextField fx:id="textFind" layoutX="122.0" layoutY="47.0" />
+      <Text layoutX="52.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="item name" />
+      <TextField fx:id="textQuantity" layoutX="398.0" layoutY="47.0" prefHeight="25.0" prefWidth="56.0" />
+      <Text layoutX="328.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="quantity" />
+      <TableView fx:id="tableStock" layoutY="100.0" prefHeight="200.0" prefWidth="333.0">
+        <columns>
+          <TableColumn fx:id="columnItem" prefWidth="87.0" text="item" />
+          <TableColumn fx:id="columnQuantity" prefWidth="79.0" text="quantity" />
+            <TableColumn fx:id="columnPrice" prefWidth="77.0" text="price" />
+            <TableColumn fx:id="columnSum" prefWidth="89.0" text="sum" />
+        </columns>
+      </TableView>
+      <Button layoutX="502.0" layoutY="47.0" mnemonicParsing="false" onAction="#loadDataFromDatabase" text="Enter" />
+      <Button layoutX="405.0" layoutY="230.0" mnemonicParsing="false" onAction="#calculatebalance" prefHeight="37.0" prefWidth="149.0" text="calculate balance" />
+   </children>
+</AnchorPane>
